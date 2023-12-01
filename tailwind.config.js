@@ -27,7 +27,7 @@ module.exports = {
         },
       },
       animation: {
-        'animateFromTop': 'fromTop 2s',
+        'animateFromTop': 'fromTop 1.2s',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
