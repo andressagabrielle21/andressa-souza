@@ -5,7 +5,7 @@ const actions = () => {
 
   useEffect(() => {
     const getRepositories = async () => {
-      const response = await fetch ("https://api.github.com/users/andressagabrielle21/repos?sort=updated&direction=desc") 
+      const response = await fetch ("https://api.github.com/users/andressagabrielle21/repos?sort=created&direction=desc") 
       const data = await response.json();
 
       const formattedData = data.map((item) => ({
