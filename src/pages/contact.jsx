@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import ContactMe from '../assets/img/contact-me.png';
-import Linkedin from '../assets/img/linkedin.png';
-import Github from '../assets/img/github.png';
-import Instagram from '../assets/img/instagram.png';
+import ContactMe from '../assets/images/contact-me.png';
+import Linkedin from '../assets/images/linkedin.png';
+import Github from '../assets/images/github.png';
+import Instagram from '../assets/images/instagram.png';
 import PageContent from '@/components/PageContent';
 
 const Contact = () => {

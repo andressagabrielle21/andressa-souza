@@ -6,7 +6,7 @@ const About = () => {
     <PageContent>
         <div className="flex flex-col md:flex-row my-[3em] md:my-0 md:p-0 text-center md:text-left items-center justify-around min-h-[90vh] mx-[3rem]">
 
-            <div className='md:w-[40%] animate-animateFromTop mb-[1.8rem] md:mb-0'>
+            <div className='md:max-w-[40%] animate-animateFromTop mb-[1.8rem] md:mb-0'>
                 <h2 className='text-[30px] font-bold mb-[2rem]'>My name is <br className='md:hidden' /><span className='text-white break-normal'>Andressa Souza!</span></h2>
 
                 <p className='leading-[25px] mb-[1.5rem] text-[18px] break-normal'>I’m a Frontend Developer from Brazil, focused on the solution of problems and in the best experience for the users.</p>

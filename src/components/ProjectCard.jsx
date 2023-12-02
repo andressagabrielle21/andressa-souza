@@ -1,8 +1,7 @@
 import React from 'react'
 import Button from './Button'
-import Link from 'next/link'
 
-export default function Project({ title, projectInfo, buttonName, imgLink, repLink }) {
+export default function ProjectCard({ title, projectInfo, buttonName, imgLink, repLink }) {
 
   return (
     <div className='bg-slate-100/50 flex flex-col-reverse md:flex-row align-center justify-between rounded-lg my-[2rem] py-[1.5rem] px-[2rem]'>
