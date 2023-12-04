@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-export default function ProjectCard({ title, projectInfo, buttonName, imgLink, repLink }) {
+export default function ProjectCard({ title, projectInfo, buttonName, imgLink, repLink, deployedWebsite }) {
 
   return (
     <div className='bg-slate-100/50 flex flex-col-reverse md:flex-row align-center justify-between rounded-lg my-[2rem] py-[1.5rem] px-[2rem]'>
@@ -10,7 +10,14 @@ export default function ProjectCard({ title, projectInfo, buttonName, imgLink, r
 
         <p className='text-lg md:w-[70%] leading-[1.3em] mb-[1.5em]'>{projectInfo}</p>
 
-        <Button link={repLink} buttonName={buttonName} />
+        <div className='flex flex-col gap-6 md:gap-8 md:flex-row'>
+          <Button link={repLink} buttonName={buttonName} />
+
+          <div className='gap-10'>
+            {deployedWebsite && <Button link={deployedWebsite} buttonName="Deployed Website" />}
+          </div>
+        </div>
+
 
       </div>
       <div>

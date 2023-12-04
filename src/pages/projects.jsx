@@ -16,11 +16,12 @@ const Projects = () => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, x: [0, 50, 0] }} transition={{ ease: "easeIn", duration: .9 }}>
           {data.map((item) => (
             <ProjectCard
-            title={item.repoName}
-            projectInfo={item.description}
-            repLink= {item.cloneUrl}
-            buttonName='GitHub Repository'
-            imgLink={item.coverImgUrl}
+              title={item.repoName}
+              projectInfo={item.description}
+              repLink= {item.cloneUrl}
+              buttonName='GitHub Repository'
+              imgLink={item.coverImgUrl}
+              deployedWebsite={item.deployed}
             />
           ))}
         </motion.div>
