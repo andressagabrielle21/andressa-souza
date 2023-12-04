@@ -12,8 +12,10 @@ const About = () => {
                 <p className='leading-[25px] mb-[1.5rem] text-[18px] break-normal'>I’m a Frontend Developer from Brazil, focused on the solution of problems and in the best experience for the users.</p>
 
                 <p className='hidden md:block leading-[25px] mb-[2rem] text-[18px] break-normal'>I love working with Web Development, designing and developing accessible and user-friendly websites. My goal is to make the difference with those projects.</p>
-
-                <Button buttonName="Checkout my resumé" link={'https://drive.google.com/file/d/1ly609bZ2idwQPJ7fOBJVRmedQN9C4HgK/view?usp=sharing'} />
+                
+                <div className='md:w-2/4'>
+                    <Button buttonName="Checkout my resumé" link={'https://drive.google.com/file/d/1ly609bZ2idwQPJ7fOBJVRmedQN9C4HgK/view?usp=sharing'} />
+                </div>
             </div>
 
 
