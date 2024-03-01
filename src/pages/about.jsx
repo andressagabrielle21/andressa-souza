@@ -24,8 +24,9 @@ const About = () => {
 
                 <ul className='leading-[1.8em] text-[18px]'>
                     <li>HTML and CSS (SCSS/SASS)</li>
-                    <li>JavaScript</li>
+                    <li>TypeScript & JavaScript</li>
                     <li>React and Next.js</li>
+                    <li>Redux & Redux Toolkit</li>
                     <li>Tailwind CSS and Styled Components</li>
                     <li>Python and Django</li>
                     <li>Git and GitFlow</li>
