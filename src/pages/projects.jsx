@@ -14,7 +14,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, x: [0, 50, 0] }} transition={{ ease: "easeIn", duration: .9 }}>
-          <div className='grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8'>
+          <div className='sm:grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8'>
             {data.map((item) => (
               <ProjectCard
                 title={item.repoName}
