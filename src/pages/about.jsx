@@ -26,9 +26,10 @@ const About = () => {
                     <li>HTML and CSS (SCSS/SASS)</li>
                     <li>TypeScript & JavaScript</li>
                     <li>React and Next.js</li>
+                    <li>Python and Django</li>
+                    <li> Java and Springboot (OOP) </li>
                     <li>Redux & Redux Toolkit</li>
                     <li>Tailwind CSS and Styled Components</li>
-                    <li>Python and Django</li>
                     <li>Git and GitFlow</li>
                     <li>SCRUM and Agile Culture</li>
                     <li>Fundamentals of UX/UI Design</li>
