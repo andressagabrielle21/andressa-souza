@@ -10,7 +10,7 @@ const Home = () => {
             <h2 className='text-[1.5em] font-bold'>Hello!</h2>
 
             <h1 className='text-[2.2em] font-bold'>My name is <span className='text-white'>Andressa.</span> </h1>
-            <h1 className='text-[1.5em] md:text-[2em] font-bold'>I'm a <span className='text-white'>Frontend Developer.</span> </h1>
+            <h1 className='text-[1.5em] md:text-[2em] font-bold'>I'm a <span className='text-white'>Software Engineer.</span> </h1>
         </div>
         <Image className='animate-animateFromTop'
           src={Profile}
