@@ -1,9 +1,32 @@
-import React from 'react'
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Button from './Button'
 import NotFound from '../assets/images/not-found.png';
 
 export default function ProjectCard({ title, projectInfo, buttonName, imgLink, repLink, deployedWebsite }) {
+
+  const [isValidLink, setIsValidLink] = useState(true);
+  const linkImgUrl = `https://raw.githubusercontent.com/andressagabrielle21/${title}/main/src/assets/images/coverImage.png`
+
+  const checkLinkStatus = async (url) => {
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      return response.ok;
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    const validateLink = async () => {
+      const isValid = await checkLinkStatus(linkImgUrl);
+      setIsValidLink(isValid);
+    };
+
+    validateLink();
+  }, [linkImgUrl]);
+
   return (
     <div className='bg-slate-100/50 flex flex-col-reverse align-center justify-between rounded-lg my-[2rem] py-[1.5rem] px-[2rem]'>
       <div className='md:flex md:flex-col md:justify-around '>
@@ -22,7 +45,7 @@ export default function ProjectCard({ title, projectInfo, buttonName, imgLink, r
 
       </div>
       <div>
-        {imgLink ?
+        {isValidLink ?
           <img src={imgLink} className='w-[26em] mb-[1rem] md:mb-0 h-[14em] rounded-lg border-2 ' alt="Project Screenshot" /> :
             <Image className='animate-animateFromTop'
             src={NotFound}
