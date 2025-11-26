@@ -13,7 +13,7 @@ export default function Navbar() {
     <> 
         <div className='bg-blue-500 bg-opacity-30 text-white p-[.8rem] shadow-lg'>
             <div className="flex items-center justify-between">
-                <h2 className='font-navbar text-[27px] hidden md:block'>Andressa Souza</h2>
+                <h2 className='font-navbar text-[27px] hidden lg:block'>Andressa Souza</h2>
 
                 {/* Hamburg Navbar NOT IMPLEMENTED*/}
                 {/* <div className="md:hidden block navbar-brand"> */}
@@ -31,7 +31,9 @@ export default function Navbar() {
                 </div> */}
                 {/* Hamburg Navbar */}
 
-                <div className='w-screen md:max-w-[25%] text-lg flex justify-around items-center'>
+                <div className='w-screen lg:max-w-[25%] 
+                  text-xl flex justify-around items-center
+                  '>
                     <Link className='hover:font-bold' href='/'>Home</Link>
                     <Link className='hover:font-bold' href='/about'>About</Link>
                     <Link className='hover:font-bold' href='/projects'>Projects</Link>
