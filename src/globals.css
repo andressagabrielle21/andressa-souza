@@ -21,3 +21,5 @@ body {
   font-family: 'League Spartan', sans-serif;
   src: url('/fonts/League+Spartan.ttf');
 }
+
+@theme {  --breakpoint-2xl: 130rem; }
