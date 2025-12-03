@@ -14,7 +14,7 @@ const About = () => {
                 <p className='hidden md:block font-semibold leading-[29px] mb-[2rem] text-[20px] break-normal'>I love working with Web Development, designing and developing accessible and user-friendly websites. My goal is to make the difference with those projects.</p>
                 
                 <div className='lg:w-2/4'>
-                    <Button buttonName="Checkout my resumé" link={'https://drive.google.com/file/d/1ethjkfOdWDR98DJoHmleqHgWbxMtshrQ/view?usp=sharing'} />
+                    <Button buttonName="Checkout my resumé" link={'https://drive.google.com/file/d/1ovVisZW2tSD2cbnM5LVeN1sLuYbIbc7S/view?usp=sharing'} />
                 </div>
             </div>
 

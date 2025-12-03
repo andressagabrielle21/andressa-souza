@@ -15,7 +15,7 @@ const Contact = () => {
         />
 
         <div className="text-center leading-[5rem]">
-          <h1 className='text-white font-bold text-[2.2em] md:text-[2.8em] [text-shadow:_0_10px_18px_rgb(0_0_0_/_38%)]'>Let’s get in touch!</h1>
+          <h1 className='text-white font-bold text-[2.2em] md:text-[2.8em] [text-shadow:_0_10px_18px_rgb(0_0_0_/_38%)]'>Keep in touch!</h1>
 
           <div className='text-[1.2em] md:text-[1.3em]'> 
             <span className='font-bold'>E-mail:</span> <a href="mailto:andressagss21@gmail.com">andressagss21@gmail.com</a> 
