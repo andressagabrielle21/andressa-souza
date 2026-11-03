@@ -3,36 +3,28 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        navbar: ['Oleo Script Swash Caps', 'cursive'],
+        display: ['"Syne"', 'Arial', 'sans-serif'],
+        serif: ['system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
-      keyframes: {
-        fromTop: {
-          '0%': { 
-            opacity: 0,
-            transform: 'translateY(100%)' 
-          },
-          '50%': { 
-            opacity: 0,
-            transform: 'translate(50)' 
-          },
-          '100%': { 
-            opacity: 1,
-            transform: 'translateY(0)' 
-          },
+      colors: {
+        peach: {
+          DEFAULT: '#f8d9b3',
+          light: '#fdf7f0',
+          subtle: '#faecd9',
+          surface: '#fdf4e9',
+          deep: '#ebc089',
         },
-      },
-      animation: {
-        'animateFromTop': 'fromTop 1.2s',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        woodland: {
+          DEFAULT: '#4a4616',
+          dark: '#35320e',
+          muted: '#6f6a31',
+          faint: '#969055',
+        },
       },
     },
   },

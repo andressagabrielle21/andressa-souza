@@ -3,15 +3,17 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <title>Andressa Souza</title>
-          <link rel="icon" href="/favicon.ico" sizes="any"/>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400;600;800&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
         </Head>
-        <body>
+        <body className="bg-white text-woodland antialiased selection:bg-woodland selection:text-white">
           <Main />
           <NextScript />
         </body>
